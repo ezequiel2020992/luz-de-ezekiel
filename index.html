@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luz de Ezekiel - Guía Espiritual</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background: url('https://cdn.pixabay.com/photo/2021/09/27/19/20/astrology-6663680_1280.jpg') center/cover no-repeat fixed;
+      background-color: #0d0b16;
+      color: #e9defa;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: rgba(0, 0, 0, 0.65);
+      padding: 80px 20px;
+      text-align: center;
+      color: #e3d4ff;
+      backdrop-filter: blur(3px);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+    }
+    header p {
+      font-style: italic;
+      font-size: 1.2em;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      background-color: rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+      margin-bottom: 30px;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(2px);
+    }
+    h2 {
+      color: #d5baff;
+      border-bottom: 1px solid #a66cff;
+      padding-bottom: 10px;
+    }
+    .boton {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #a66cff;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      margin-top: 20px;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(124, 77, 255, 0.6);
+    }
+    footer {
+      background-color: rgba(0, 0, 0, 0.7);
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #c6aef9;
+    }
+    ul li {
+      margin-bottom: 15px;
+    }
+    p, li {
+      font-size: 1.1em;
+    }
+    .servicio-img {
+      width: 100%;
+      max-width: 600px;
+      display: block;
+      margin: 15px auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    }
+    .carta-dia {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .carta-dia img {
+      width: 150px;
+      height: auto;
+      margin-top: 15px;
+    }
+    .redes {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 1000;
+    }
+    .redes a {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #a66cff;
+      box-shadow: 0 4px 10px rgba(124, 77, 255, 0.6);
+      transition: transform 0.2s;
+    }
+    .redes a:hover {
+      transform: scale(1.1);
+    }
+    .redes img {
+      width: 28px;
+      height: 28px;
+    }
+  </style>
+  <script>
+    const cartas = [
+      { nombre: "El Loco", img: "https://upload.wikimedia.org/wikipedia/commons/9/90/RWS_Tarot_00_Fool.jpg" },
+      { nombre: "La Emperatriz", img: "https://upload.wikimedia.org/wikipedia/commons/d/d2/RWS_Tarot_03_Empress.jpg" },
+      { nombre: "El Mago", img: "https://upload.wikimedia.org/wikipedia/commons/1/1a/RWS_Tarot_01_Magician.jpg" },
+      { nombre: "La Luna", img: "https://upload.wikimedia.org/wikipedia/commons/7/7f/RWS_Tarot_18_Moon.jpg" },
+      { nombre: "El Sol", img: "https://upload.wikimedia.org/wikipedia/commons/1/17/RWS_Tarot_19_Sun.jpg" }
+    ];
+
+    function mostrarCarta() {
+      const carta = cartas[Math.floor(Math.random() * cartas.length)];
+      document.getElementById("resultado-carta").innerHTML = `
+        <h3>Tu carta del día: ${carta.nombre}</h3>
+        <img src="${carta.img}" alt="${carta.nombre}" />
+      `;
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Luz de Ezekiel</h1>
+    <p>Guía espiritual, tarot terapéutico y sanación esotérica</p>
+    <a class="boton" href="https://wa.me/573054585099">Reserva tu consulta</a>
+  </header>
+
+  <section>
+    <h2>Sobre Ezekiel</h2>
+    <p>Soy Ezekiel, guía espiritual y lector de tarot con más de 10 años de experiencia en el mundo esotérico. Acompaño a quienes buscan claridad, equilibrio energético y conexión con su propósito a través de herramientas ancestrales y espirituales.</p>
+  </section>
+
+  <section>
+    <h2>Servicios</h2>
+    <ul>
+      <li>🔮 Tarot Terapéutico – Conexión profunda con tu alma.</li>
+      <img class="servicio-img" src="https://images.unsplash.com/photo-1589227365533-58a6ff2034f2?auto=format&fit=crop&w=1000&q=80" alt="Tarot Terapéutico">
+      <li>🧧 Lectura del I Ching – Sabiduría oriental para decisiones importantes.</li>
+      <img class="servicio-img" src="https://images.unsplash.com/photo-1603269826185-e3ccc9f7d34f?auto=format&fit=crop&w=1000&q=80" alt="I Ching">
+      <li>💧 Limpiezas y Riegos Espirituales – Elimina cargas y bloqueos energéticos.</li>
+      <img class="servicio-img" src="https://images.unsplash.com/photo-1635991668084-9c2ac7e5a9fc?auto=format&fit=crop&w=1000&q=80" alt="Limpiezas espirituales">
+      <li>🕯️ Velones Ritualizados – Activación energética y protección espiritual.</li>
+      <img class="servicio-img" src="https://images.unsplash.com/photo-1612052298566-0ee0a53b87b7?auto=format&fit=crop&w=1000&q=80" alt="Velones esotéricos">
+      <li>📿 Radiestesia con péndulo – Respuestas precisas a tus inquietudes.</li>
+      <img class="servicio-img" src="https://images.unsplash.com/photo-1591091013827-1aa6b64f3c48?auto=format&fit=crop&w=1000&q=80" alt="Radiestesia">
+      <li>🌟 Oráculo Angélico – Mensajes de tus guías espirituales.</li>
+      <img class="servicio-img" src="https://images.unsplash.com/photo-1594281737842-89e94fa06f77?auto=format&fit=crop&w=1000&q=80" alt="Oráculo Angélico">
+    </ul>
+  </section>
+
+  <section>
+    <h2>Conoce tu Carta del Día</h2>
+    <p>Escoge una carta virtual y aprende su mensaje simbólico y terapéutico para tu vida.</p>
+    <div class="carta-dia">
+      <button class="boton" onclick="mostrarCarta()">Seleccionar Carta</button>
+      <div id="resultado-carta"></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Testimonios</h2>
+    <p>✨ “La consulta con Ezekiel cambió mi vida. Fue como hablar con mi alma.” – Mariana G.</p>
+    <p>✨ “Sus riegos y velones me ayudaron a desbloquear lo que no podía ver.” – Andrés L.</p>
+  </section>
+
+  <section>
+    <h2>Contacto</h2>
+    <p>📍 Mocoa, Colombia<br>
+    📞 WhatsApp: +57 3054585099<br>
+    📩 Email: ezekiel.mumiah@gmail.com<br>
+    🔮 Instagram: <a href="https://instagram.com/luzdeezekiel" style="color: #d5baff">@luzdeezekiel</a></p>
+  </section>
+
+  <footer>
+    © 2025 Luz de Ezekiel – Todos los derechos reservados.<br>
+    Creado con amor y energía espiritual.
+  </footer>
+
+  <div class="redes">
+    <a href="https://wa.me/573054585099" target="_blank" title="WhatsApp">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+    <a href="https://instagram.com/luzdeezekiel" target="_blank" title="Instagram">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+    </a>
+  </div>
+</body>
+</html>
